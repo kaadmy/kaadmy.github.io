@@ -2,7 +2,7 @@ baseurl = "https://kaadmy.github.io/website/"
 languageCode = "en-us"
 theme = "terminal"
 #paginate = 5
-publishDir = "docs"
+publishDir = "public"
 
 [params]
   # dir name of your main content (default is `content/posts`).
