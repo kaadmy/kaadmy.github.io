@@ -11,20 +11,15 @@ jobs:
     runs-on: ubuntu-18.04
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-python@v2
         with:
-          submodules: true
-          fetch-depth: 0
+          python-version: '3.9'
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2.4.13
+      - run: python amberbuild
 
-      - name: Build
-        run: hugo --minify
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
