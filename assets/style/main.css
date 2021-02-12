@@ -202,30 +202,38 @@ li::marker {
     image-rendering: crisp-edges;
 }
 
-/* Logo styling. */
-
-.logo {
-    display: inline-block;
-
-    height: 5rem;
-
-    margin: 0 3rem;
-}
-
 /* Header. */
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
     margin-top: 1.5rem;
     margin-bottom: 2.5rem;
 }
 
-.header-link {
-    width: 4.5em;
+.header-logo {
+    display: flex;
 
+    height: 5rem;
+
+    margin: 0 3rem;
+}
+
+.header-left {
+    display: flex;
+    justify-content: right;
+    flex: 1;
+}
+
+.header-right {
+    display: flex;
+    justify-content: left;
+    flex: 1;
+}
+
+.header-link {
     text-align: center;
 
     text-decoration: none;
