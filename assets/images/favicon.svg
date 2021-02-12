@@ -13,7 +13,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07, custom)"
-   sodipodi:docname="logo.svg">
+   sodipodi:docname="favicon.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="73.712458"
-     inkscape:cy="173.30902"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="106.05489"
+     inkscape:cy="-12.21385"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -61,8 +61,9 @@
     <path
        id="path978"
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 77 32 L 30.666016 171 L 70.666016 171 L 117 32 L 77 32 z M 27 182 L 20 203 L 60 203 L 67 182 L 27 182 z M 16.333984 214 L 13 224 L 53 224 L 56.333984 214 L 16.333984 214 z "
-       transform="scale(0.26458333)" />
+       d="M 77,32 13,224 H 53 L 117,32 Z"
+       transform="scale(0.26458333)"
+       sodipodi:nodetypes="ccccc" />
     <path
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 25.4,21.166667 19.314582,38.1 -1.423601,0 -9.424315,1e-6 -12.699999,-25.400002"
@@ -70,12 +71,12 @@
        sodipodi:nodetypes="ccccc" />
     <path
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 46.566667,59.266667 49.477083,50.8 h 8.466667 l -2.910417,8.466667 h -8.466666"
+       d="m 46.83125,59.266666 3.704166,-10.847917 10.054167,1e-6 -3.704167,10.847917 -10.054166,-10e-7"
        id="path986"
        sodipodi:nodetypes="ccccc" />
     <path
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 50.799999,8.4666666 9.789584,0 V 11.1125 L 34.395833,33.3375 30.1625,25.664583 50.799999,8.4666666"
+       d="m 50.799999,8.4666666 h 9.789584 l 0,3.9687504 -24.341667,19.05 L 31.75,23.283333 50.799999,8.4666666"
        id="path1042"
        sodipodi:nodetypes="cccccc" />
   </g>
