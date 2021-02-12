@@ -236,3 +236,16 @@ footer {
 
     color: var(--color-text-faded);
 }
+
+/* Listings. */
+
+.listing-item {
+    margin-bottom: 2em;
+}
+
+.listing-item-metadata {
+    font-style: italic;
+    font-size: smaller;
+
+    color: var(--color-text-faded);
+}
