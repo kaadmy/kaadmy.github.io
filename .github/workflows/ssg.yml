@@ -1,5 +1,5 @@
 
-name: Githhub Pages build and deploy
+name: Github Pages build and deploy
 
 on:
   push:
@@ -19,8 +19,6 @@ jobs:
         with:
           repository: kaadmy/ambergen
           path: _ambergen
-
-      - run: echo "$GITHUB_WORKSPACE"
 
       - name: Setup Python
         uses: actions/setup-python@v2
