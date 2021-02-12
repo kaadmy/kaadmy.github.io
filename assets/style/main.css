@@ -51,6 +51,10 @@ p {
     margin-bottom: 1em;
 }
 
+.faded {
+    color: var(--color-text-faded);
+}
+
 /* Horizontal rule. */
 
 hr {
@@ -64,16 +68,18 @@ hr {
 /* Links. */
 
 .link {
-    text-decoration: underline;
-
-    font-weight: bold;
+    margin: -0.2rem;
 
     padding: 0.2rem;
 
     border-radius: 4px;
 
     background-color: transparent;
-    color: var(--color-text);
+    color: inherit;
+
+    text-decoration: underline;
+
+    font-weight: bold;
 
     transition: background-color 0.07s ease,
                 color 0.07s ease;
