@@ -5,7 +5,10 @@ on:
   push:
     branches:
       - main
-
+  workflow_dispatch:
+    inputs:
+      tags:
+        description: 'Build site manually'
 jobs:
   build:
     runs-on: ubuntu-18.04
