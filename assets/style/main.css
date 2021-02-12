@@ -1,0 +1,251 @@
+
+/* Variables and global setup. */
+
+:root {
+    --color-bg-primary: #fff;
+    --color-bg-secondary: #ddd;
+
+    --color-text: #000;
+    --color-text-faded: #777;
+
+    --color-bg-code: #fcf5f1;
+    --color-bg-embed: #f3f3f3;
+
+    --color-hr: #ccc;
+
+    --color-accent: #e73;
+}
+
+* {
+    margin: 0;
+
+    padding: 0;
+
+    line-height: 1.4em;
+
+    font-size: 100%;
+}
+
+/* Body. */
+
+body {
+    max-width: 60rem;
+
+    margin: 0 auto;
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    font-family: -apple-system, BlinkMacSystemFont, avenir next,
+                 avenir, helvetica neue, helvetica, Ubuntu,
+                 roboto, noto, segoe ui, arial, sans-serif;
+    font-size: 100%;
+
+    background-color: #ffffff;
+}
+
+/* Paragraph styling. */
+
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* Horizontal rule. */
+
+hr {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
+    border: 0;
+    border-bottom: 0.1rem solid var(--color-hr);
+}
+
+/* Links. */
+
+.link {
+    text-decoration: underline;
+
+    font-weight: bold;
+
+    padding: 0.2rem;
+
+    border-radius: 4px;
+
+    background-color: transparent;
+    color: var(--color-text);
+
+    transition: background-color 0.07s ease,
+                color 0.07s ease;
+}
+
+.link:hover {
+    text-decoration: underline;
+
+    background-color: var(--color-text);
+    color: var(--color-bg-primary);
+}
+
+/* Heading styling. */
+
+.heading {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+
+    padding-bottom: 0.1em;
+
+    border-bottom: 0.1rem solid var(--color-hr);
+
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.heading > a {
+    text-decoration: none;
+
+    color: inherit;
+}
+
+.heading > a:hover {
+    text-decoration: underline;
+}
+
+/* List styling. */
+
+ul {
+    margin-left: 1.5em;
+}
+
+li {
+    padding-left: 0.6em;
+}
+
+li::marker {
+    content: "•";
+}
+
+/* Code styling. */
+
+.code-inline {
+    padding: 0.2rem;
+
+    border-radius: 4px;
+
+    font-family: Menlo, Consolas, Monaco, Liberation Mono,
+                 Lucida Console, monospace;
+    font-size: smaller;
+
+    background-color: var(--color-bg-code);
+}
+
+.code-block {
+    overflow: auto;
+
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+
+    padding: 0.6rem;
+
+    border-radius: 4px;
+
+    font-family: Menlo, Consolas, Monaco, Liberation Mono,
+                 Lucida Console, monospace;
+    font-size: smaller;
+
+    background-color: var(--color-bg-code);
+}
+
+/* Embed styling. */
+
+.embed {
+    display: block;
+
+    object-fit: contain;
+    width: 100%;
+
+    margin-top: 2.0em;
+    margin-bottom: 0.8em;
+
+    border-radius: 6px;
+
+    background-color: var(--color-bg-embed);
+}
+
+.embed-small {
+    float: right;
+
+    object-fit: contain;
+    width: 30%;
+
+    margin-bottom: 1.5em;
+    margin-left: 1.5em;
+
+    border-radius: 6px;
+
+    background-color: var(--color-bg-embed);
+}
+
+.embed-caption {
+    display: block;
+    text-align: center;
+}
+
+/* Miscellaneous stuff. */
+
+.image-pixel {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+/* Logo styling. */
+
+.logo {
+    display: inline-block;
+
+    height: 5rem;
+
+    margin: 0 3rem;
+}
+
+/* Header. */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.header-link {
+    width: 4.5em;
+
+    text-align: center;
+
+    text-decoration: none;
+}
+
+/* Footer. */
+
+footer {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    text-align: center;
+
+    color: var(--color-text-faded);
+}
+
+/* Listings. */
+
+.listing-item {
+    margin-bottom: 2em;
+}
+
+.listing-item-metadata {
+    font-style: italic;
+    font-size: smaller;
+
+    color: var(--color-text-faded);
+}
