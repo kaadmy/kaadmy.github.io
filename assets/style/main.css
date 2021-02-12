@@ -2,18 +2,17 @@
 /* Variables and global setup. */
 
 :root {
-    --color-bg-primary: #fff;
-    --color-bg-secondary: #ddd;
-
-    --color-text: #000;
-    --color-text-faded: #777;
-
-    --color-bg-code: #fcf5f1;
-    --color-bg-embed: #f3f3f3;
-
-    --color-hr: #ccc;
-
     --color-accent: #e73;
+
+    --color-bg: #fff;
+    --color-fg: #000;
+    --color-fg-faded: #777;
+
+    --color-code-inline-bg: #f1f1f1;
+    --color-code-inline-fg: #000;
+
+    --color-code-block-bg: #f1f1f1;
+    --color-code-block-text: #000;
 }
 
 * {
@@ -52,7 +51,7 @@ p {
 }
 
 .faded {
-    color: var(--color-text-faded);
+    color: var(--color-fg-faded);
 }
 
 /* Horizontal rule. */
@@ -62,34 +61,32 @@ hr {
     margin-bottom: 0.5em;
 
     border: 0;
-    border-bottom: 0.1rem solid var(--color-hr);
+    border-bottom: 0.1rem solid var(--color-fg-faded);
 }
 
 /* Links. */
 
 .link {
-    margin: -0.2rem;
+    margin: -0.2em;
 
-    padding: 0.2rem;
+    padding: 0.2em;
 
     border-radius: 4px;
-
-    background-color: transparent;
-    color: inherit;
 
     text-decoration: underline;
 
     font-weight: bold;
 
-    transition: background-color 0.07s ease,
-                color 0.07s ease;
+    background-color: transparent;
+    color: inherit;
+
+    transition: background-color 0.08s ease,
+                color 0.08s ease;
 }
 
 .link:hover {
-    text-decoration: underline;
-
-    background-color: var(--color-text);
-    color: var(--color-bg-primary);
+    background-color: var(--color-fg);
+    color: var(--color-bg);
 }
 
 /* Heading styling. */
@@ -100,7 +97,7 @@ hr {
 
     padding-bottom: 0.1em;
 
-    border-bottom: 0.1rem solid var(--color-hr);
+    border-bottom: 0.1rem solid var(--color-fg-faded);
 
     font-size: 150%;
     font-weight: bold;
@@ -133,7 +130,7 @@ li::marker {
 /* Code styling. */
 
 .code-inline {
-    padding: 0.2rem;
+    padding: 0.15rem;
 
     border-radius: 4px;
 
@@ -141,7 +138,8 @@ li::marker {
                  Lucida Console, monospace;
     font-size: smaller;
 
-    background-color: var(--color-bg-code);
+    background-color: var(--color-code-inline-bg);
+    color: var(--color-code-inline-fg);
 }
 
 .code-block {
@@ -150,15 +148,17 @@ li::marker {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
 
-    padding: 0.6rem;
+    padding: 0.4rem;
 
-    border-radius: 4px;
+    border-radius: 0 4px 4px 0;
+    border-left: 0.3rem solid var(--color-fg);
 
     font-family: Menlo, Consolas, Monaco, Liberation Mono,
                  Lucida Console, monospace;
     font-size: smaller;
 
-    background-color: var(--color-bg-code);
+    background-color: var(--color-code-block-bg);
+    color: var(--color-code-block-fg);
 }
 
 /* Embed styling. */
@@ -168,13 +168,12 @@ li::marker {
 
     object-fit: contain;
     width: 100%;
+    max-height: 40rem;
 
     margin-top: 2.0em;
     margin-bottom: 0.8em;
 
     border-radius: 6px;
-
-    background-color: var(--color-bg-embed);
 }
 
 .embed-small {
@@ -187,8 +186,6 @@ li::marker {
     margin-left: 1.5em;
 
     border-radius: 6px;
-
-    background-color: var(--color-bg-embed);
 }
 
 .embed-caption {
@@ -240,7 +237,7 @@ footer {
 
     text-align: center;
 
-    color: var(--color-text-faded);
+    color: var(--color-fg-faded);
 }
 
 /* Listings. */
@@ -253,5 +250,5 @@ footer {
     font-style: italic;
     font-size: smaller;
 
-    color: var(--color-text-faded);
+    color: var(--color-fg-faded);
 }
