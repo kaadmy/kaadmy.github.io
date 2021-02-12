@@ -11,15 +11,23 @@ jobs:
     runs-on: ubuntu-18.04
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout site
+        uses: actions/checkout@v2
 
-      - uses: actions/setup-python@v2
+      - name: Checkout Ambergen
+        uses: actions/checkout@v2
+        repository: kaadmy/ambergen
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
         with:
           python-version: '3.9'
 
-      - run: python amberbuild
+      - name: Build site
+        run: python ${GITHUB_WORKSPACE}/ambergen/ambergen
 
-      - uses: peaceiris/actions-gh-pages@v3
+      - name: Publish site
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
