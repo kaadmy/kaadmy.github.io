@@ -16,7 +16,8 @@ jobs:
 
       - name: Checkout Ambergen
         uses: actions/checkout@v2
-        repository: kaadmy/ambergen
+        with:
+          repository: kaadmy/ambergen
 
       - name: Setup Python
         uses: actions/setup-python@v2
